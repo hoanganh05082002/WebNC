@@ -1,0 +1,121 @@
+﻿.fa{
+    padding-right : 10px;
+}
+.registation .dropdown-menu {
+    position: absolute;
+    background-color: #395676;
+    border: none;
+    border-radius: 0;
+    min-width: 132.5px;
+    display: none;
+    z-index: 1;
+}
+
+.registation:hover .dropdown-menu {
+    display: block;
+}
+
+.registation .dropdown-menu .menu {
+    display: block;
+}
+
+    .registation .dropdown-menu .menu a {
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.5s ease;
+    }
+
+    .registation .dropdown-menu .menu:hover {
+        background-color: #8b8989;
+    }
+.navbar-nav.navbar-right {
+    margin-top: 8px;
+}
+
+.center-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    margin-top: 6.5%;
+}
+
+
+/* Tạo kiểu cho nhóm các thành phần form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Tạo kiểu cho nhãn (label) */
+.control-label {
+    text-align: right;
+    font-weight: bold;
+}
+.form-horizontal{
+    align-items : center;
+}
+/* Tạo kiểu cho textbox */
+.form-horizontal .col-md-3 input[type="text"],
+.form-horizontal .col-md-3 input[type="password"] {
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+/* Tạo kiểu cho checkbox và nút đăng nhập */
+.form-horizontal .col-md-6 input[type="checkbox"],
+.form-horizontal .col-md-6 button {
+    margin-top: 5px;
+}
+
+/* Tạo kiểu cho nút đăng nhập */
+.btn-success {
+    background-color: #395676;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn-success:hover,
+    .btn-success:focus,
+    .btn-success:active,
+    .btn-success.active,
+    .open .dropdown-toggle.btn-success {
+        color: #fff;
+        background-color: #0056b3;
+        border-color: #398439;
+    }
+
+/* Tạo kiểu cho liên kết */
+a {
+    color: #395676;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+label {
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 5%;
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+}

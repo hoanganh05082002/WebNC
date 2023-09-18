@@ -1,0 +1,70 @@
+﻿
+/* Footer Styles */
+/* Style for the logo image */
+.navbar-brand img {
+    height: 50px; /* Set the desired height for the logo */
+    padding: 10px 10px 10px 10px;
+    border-radius: 50%;
+}
+
+.navbar-footer {
+    display: flex;
+    padding: 0px 10px;
+}
+/* Style for the shop name */
+.nameshop {
+    font-size: 24px; /* Set the desired font size */
+    color: #fff; /* Change this to your preferred text color */
+}
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    transition: color 0.3s ease;
+    margin: 10px;
+}
+
+.footer-links a:hover {
+        color: #fca311;
+        text-decoration: none;
+}
+
+.footer-social a img {
+    margin-right: 10px;
+    border-radius: 50%;
+    max-width: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #111;
+}

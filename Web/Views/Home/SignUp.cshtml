@@ -1,0 +1,43 @@
+<div class="center-page">
+    <label class="col-xs-11" for="txtUser">Username :</label>
+    <div class="col-xs-11">
+        <input type="text" id="txtUser" class="form-control" placeholder="Enter Your Name">
+    </div>
+    <label class="col-xs-11" id="errorU" runat="server"></label>
+
+    <label class="col-xs-11" for="txtEmail">Email :</label>
+    <div class="col-xs-11">
+        <input type="email" id="txtEmail" class="form-control" placeholder="Enter Your Email">
+    </div>
+    <label class="col-xs-11" id="errorE" runat="server"></label>
+
+    <label class="col-xs-11" for="txtPass">Password :</label>
+    <div class="col-xs-11">
+        <input type="password" id="txtPass" class="form-control" placeholder="Enter Password"
+            oninput="hidePasswords('txtPass', this.value)">
+        <span class="toggle-password" onclick="togglePasswordVisibility('txtPass')">👁️</span>
+    </div>
+    <label class="col-xs-11" id="errorP" runat="server"></label>
+
+    <label class="col-xs-11" for="txtCPass">Confirm Password:</label>
+
+    <div class="col-xs-11">
+        <input type="password" id="txtCPass" class="form-control" placeholder="Confirm Password"
+            oninput="hidePasswords('txtCPass', this.value)">
+        <span class="toggle-password" onclick="togglePasswordVisibility('txtCPass')">👁️</span>
+    </div>
+    
+    <label class="col-xs-11" id="errorCP" runat="server"></label>
+
+    <div class="col-xs-11">
+        <button id="btnSubmit" class="btn btn-primary" type="button" onclick="btnSubmit_Click()">Sign Up</button>
+    </div>
+    <div class="col-xs-11">
+        <label>
+            Bạn đã có tài khoản ?
+           <a asp-controller="Home" asp-action="LogIn">
+                     Log In
+           </a>
+        </label>
+    </div>
+</div>

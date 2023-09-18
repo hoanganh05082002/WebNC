@@ -1,0 +1,220 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+/* Style for the logo image */
+.navbar-brand img {
+    height: 50px; /* Set the desired height for the logo */
+    padding: 10px 10px 10px 10px;
+}
+
+.navbar-header {
+    display: flex;
+    padding: 0px 10px;
+}
+/* Style for the shop name */
+.nameshop {
+    font-size: 24px; /* Set the desired font size */
+    color: #fff; /* Change this to your preferred text color */
+}
+
+/* Đặt kiểu cho Navigation bar  */
+.navbar {
+    background-color: #395676; /* Thay đổi màu nền cho thanh navbar */
+    color: #fff; /* Thay đổi màu chữ */
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+
+.navbar-nav li {
+    display: inline-block; /*Hiển thị menu theo chiều ngang*/
+    margin: 0;
+    vertical-align: middle; /* Giữ icon và text theo chiều dọc */
+}
+
+    .navbar-nav li a {
+        display: flex; /* Căn chỉnh icon và text theo chiều ngang */
+        align-items: center; /* Căn giữa content theo chiều dọc*/
+        padding: 15px 40px;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.5s ease; /*Hiển thị hiệu ứng khi hover vào các element trong menu*/
+    }
+
+
+.navbar-collapse.collapse {
+    padding-left: 32%;
+}
+
+.navbar-nav.navbar-right {
+    margin-top: 8px;
+}
+
+/* Adjust the height of the navigation bar */
+.navbar-fixed-top {
+    min-height: 50px;
+}
+
+
+
+/* CSS cho hover chữ khi di chuột vào liên kết */
+.navbar-nav.navbar-right li a:hover {
+     color: #fca311;; /* Thay đổi màu chữ khi di chuột vào */
+}
+
+
+.registation .dropdown-menu {
+    position: absolute;
+    background-color: #395676;
+    border: none;
+    border-radius: 0;
+    min-width: 132.5px;
+    display: none;
+    z-index: 1;
+}
+
+.registation:hover .dropdown-menu {
+    display: block;
+}
+
+.registation .dropdown-menu .menu {
+    display: block;
+}
+
+    .registation .dropdown-menu .menu a {
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.5s ease;
+    }
+
+    .registation .dropdown-menu .menu:hover {
+        background-color: #8b8989;
+    }
+
+
+/*Slide chuyển ảnh */
+/* CSS cho slide */
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Đảm bảo ảnh căn giữa theo chiều dọc */
+}
+
+.item {
+    display: none;
+    width: 100%;
+    padding: 10px 10%;
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước thực sự của slide */
+}
+
+.active {
+    display: flex; /* Sử dụng flex để hiển thị slide hiện tại */
+}
+
+.slide {
+    width: 100%;
+    max-height: 80vh; /* Giới hạn chiều cao của ảnh */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo khi co hoặc căng */
+}
+
+/* CSS cho nút điều hướng */
+.slider__btnp,
+.slider__btnn {
+    position: absolute;
+    top: 50%; /* Đưa nút điều hướng ra giữa theo chiều dọc */
+    transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.slider__btnp {
+    left: 9%;
+}
+
+.slider__btnn {
+    right: 9%;
+}
+
+.slider__btn-slider {
+    background-color: transparent;
+    color: #fca311;
+    border: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.slider-prev {
+    margin-right: 10px;
+}
+
+.slider-next {
+    margin-left: 10px;
+}
+
+
+
+
+/* CSS cho icon */
+
+.fa{
+    padding-right: 10px;
+}
+.fa-chevron-left:before,
+.fa-chevron-right:before {
+    content: "\f053"; /* Unicode cho biểu tượng chèn lùi */
+}
+
+.fa-chevron-right:before {
+    content: "\f054"; /* Unicode cho biểu tượng chèn tiến */
+}
+
+
+/* CSS cho 3 mục */
+
+.col-lg-4 {
+    width: 33.33%;
+    float: left; /* Đảm bảo cột nằm cạnh nhau */
+    padding: 15px; /* Tùy chỉnh padding nếu cần */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước thực sự của cột */
+}
+
+/* Xóa float để ngăn chặn vấn đề sau khi chia cột */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Căn giữa nội dung trong các cột */
+.col-lg-4 {
+    text-align: center;
+}
+
+    /* Căn chỉnh hình ảnh trong lớp img-circle */
+    .col-lg-4 img.img-circle {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%; /* Đảm bảo hình ảnh trở thành hình tròn */
+    }
+
+/* Thêm padding cho cả hàng để tạo khoảng cách giữa các cột */
+.row {
+    margin: 10px 25px;
+}
+
+.btn-default {
+    text-decoration: none;
+    color: #395676;
+}

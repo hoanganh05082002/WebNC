@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/fontawesome-free-6.1.1-web/css/all.min.css" asp-append-version="true" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet' asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet"
+        asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
+    <title>My A-Shopping Websites </title>
+    <link rel="stylesheet" href="~/css/signup.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/footer.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+</head>
+
+<body>
+<div>
+    <div>
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- /*Tạo icon và tên Shop */ -->
+                <div class="navbar-header">
+                    <a asp-controller="Home" asp-action="Home" class="navbar-brand">
+                        <img src="/Images/Icons/images.jfif" alt="ImagesAShop" />
+                    </a>
+                    <h3 class="nameshop">A Shop</h3>
+                </div>
+
+                <!-- Tạo Menu và lấy icon -->
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active">
+                            <a asp-controller="Home" asp-action="Home">
+                                <i class="fa fa-home"></i> Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-shopping-cart"></i> Product
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-newspaper"></i> News
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-info-circle"></i> About
+                            </a>
+                        </li>
+                        <!-- Tạo đăng ký -->
+                        <li class="registation">
+                            <a href="#">
+                                <i class="fa fa-user"></i> Registration
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a asp-controller="Home" asp-action="SignUp">
+                                        Sign Up
+                                    </a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Home" asp-action="Login">
+                                        Log In
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+            @RenderBody()
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="navbar-footer">
+                <a asp-controller="Home" asp-action="Home" class="navbar-brand">
+                    <img src="/Images/Icons/images.jfif" alt="ImagesAShop" />
+                </a>
+                <h3 class="nameshop">A Shop</h3>
+            </div>
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Home Page</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <a href="#"><img src="/Images/Icons/facebook.jfif" alt="Facebook" /></a>
+                <a href="#"><img src="/Images/Icons/twitter.jfif" alt="Twitter" /></a>
+                <a href="#"><img src="/Images/Icons/instagram.jfif" alt="Instagram" /></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Bản quyền thuộc về A Shop
+        </div>
+    </footer>
+    <script src="~/js/wrapslide.js" asp-append-version="true"></script>
+    <script src="~/js/togglePasswordVisibility.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</div>
+</body>
+
+</html>

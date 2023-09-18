@@ -1,0 +1,65 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="carousel-inner">
+    <!-- Tạo nút điều hướng  -->
+    <div class="slider__btnp hide-on-mobile-tablet " onclick="plusslides(-1)">
+        <button class="btn btn--nomal slider__btn-slider slider-prev">
+            <!-- chứa icon -->
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+    </div>
+
+    <!-- Tạo slide chuyển ảnh  -->
+    <div class="item active">
+        <img src="/Images/Slide-Wrap/sole-station-1024x683.jpg" alt="Slide" class="slide" />
+    </div>
+
+    <div class="item">
+        <img src="/Images/Slide-Wrap/shop-giay-replica-1024x768.jpg" alt="Slide" class="slide" />
+    </div>
+    <div class="item">
+        <img src="/Images/Slide-Wrap/bom-store-316288.jpg" alt="Slide" class="slide" />
+    </div>
+
+    <!-- Tạo nút điều hướng  -->
+
+    <div class="slider__btnn hide-on-mobile-tablet" onclick="plusSlides(1)">
+        <button class="btn btn--nomal slider__btn-slider slider-next">
+            <!-- chứa icon -->
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+</div>
+
+<h1 style="text-align: center;"> Các sản phẩm nổi bật</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="./Images/Category/jordan.jfif" alt="Jordan" class="img-circle" />
+            <h2>Jordan</h2>
+            <p> Dòng giày này còn gây ấn tượng bởi chất lượng, độ êm ái, cảm giác trải nghiệm tốt mà đôi giày mang lại.
+                Đối với 1 đôi giày chính hãng,
+                bạn có thể mang đến vài chục năm là chuyện hết sức bình thường.</p>
+            <p><a href="#" class="btn btn-default" role="button">Chi tiết <i class="fas fa-info-circle"></i></a></p>
+        </div>
+        <div class="col-lg-4">
+            <img src="./Images/Category/th (1).jfif" alt="Sneaker" class="img-circle" />
+            <h2>Sneaker</h2>
+            <p> Giày Sneaker là một trong những loại giày được khá nhiều các bạn gái yêu thích.
+                Mỗi ngày khi ra đường, bạn đều phải suy nghĩ và lựa chọn đôi giày thể thao sao cho phù hợp với bộ trang
+                phục của mình.</p>
+            <p><a href="#" class="btn btn-default" role="button">Chi tiết <i class="fas fa-info-circle"></i></a></p>
+        </div>
+        <div class="col-lg-4">
+            <img src="./Images/Category/scandal.jfif" alt="Scandal" class="img-circle" />
+            <h2>Scandal</h2>
+            <p> Giày sandal là một loại giày được không chỉ các bạn trẻ mà cả những người lớn tuổi ưa thích.
+                Giày sandal có khá nhiều tên gọi khác nhau như là giày xăng đan hoặc dép xăng đan.</p>
+            <p><a href="#" class="btn btn-default" role="button">Chi tiết <i class="fas fa-info-circle"></i> </a></p>
+
+        </div>
+    </div>
+</div>
